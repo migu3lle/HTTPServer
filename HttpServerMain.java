@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class MainThread {
+public class HttpServerMain {
 
     private static ServerSocket serverSocket;
     private static Socket connectionSocket;

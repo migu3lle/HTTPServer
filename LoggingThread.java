@@ -28,9 +28,9 @@ public class LoggingThread extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            synchronized (MainThread.sharedLogString){
-                writeLogToFile(MainThread.sharedLogString);
-                MainThread.sharedLogString = "";
+            synchronized (HttpServerMain.sharedLogString){
+                writeLogToFile(HttpServerMain.sharedLogString);
+                HttpServerMain.sharedLogString = "";
             }
         }
     }
